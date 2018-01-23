@@ -17,10 +17,7 @@ class Game : JPanel()
     override fun paint(g: Graphics?)
     {
         super.paint(g)
-        val g2d = g as Graphics2D?
-        g2d!!.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
-                RenderingHints.VALUE_ANTIALIAS_ON)
-        g2d.fillOval(x, y, 30, 30)
+        g?.fillOval(x, y, 30, 30)
     }
 }
 fun main(args: Array<String>)
